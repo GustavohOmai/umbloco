@@ -1,5 +1,358 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+    z-index: 2;
+}
+
+footer{
+    background-color: #171717;
+    margin-top: 5rem;
+}
+
+.header-on {
+    background-color: #242424;
+}
+
+header img {
+    width: 280px;
+}
+
+ul,
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 3rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;           
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #0d0d0d; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 30px;  
+  }
+
+
+.navanimation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.navanimation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    right: 0;
+    background: #fff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.navanimation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.w-80 {
+    width: 80%!important;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/bg-main.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.main-title {
+    font-size: 4.8rem;
+    width: 50%;
+    font-weight: 300;
+}
+
+.main-title span {
+    font-weight: 600;
+}
+
+.main-subtitle {
+    font-size: 1.4rem;
+    width: 60%;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+}
+
+.main-bloco {
+    display: flex;
+    justify-content: end;
+}
+
+.main-bloco img {
+    width: 80%;
+}
+
+.title{
+    width: 100%;
+    position: relative;
+}
+
+.title h2{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+.border-title {
+    margin-top: -.2rem;
+    border: .5px rgb(63, 63, 63) solid;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 0;
+}
+
+.border-grossa {
+    border-bottom: 4px solid #000;
+    width: 13.5%;
+    position: relative;
+    z-index: 1;
+}
+
+.border-grossa.tijolo{
+    border-bottom: 4px solid #000;
+    width: 20%;
+    position: relative;
+    z-index: 1;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.projetos{
+    margin-bottom: 5rem;
+}
+.frase{
+    padding: 2rem;
+    text-align: end;
+}
+
+.frase h2{
+     font-size: 3.5rem;
+}
+
+.frase p{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.font-light{
+    font-weight: normal;
+}
+
+.d-flex-end{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.frase a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.vh80{
+    max-width: 70%;
+}
+
+.mb{
+    margin-bottom: 5rem;
+}
+
+.sobre-tijolo p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.sobre-tijolo{
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.reconstruindo{
+    font-size: 2.3rem;
+}
+
+.contato h3{
+    color: #fff;
+    font-weight: normal;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.contato a{
+    color: #fff;
+ 
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.w-50{
+    width: 50%;
+}
+
+
+.slick-arrow:before{
+    content:""!important;
+      width: 50%!important;
+      height: 90%!important;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .slick-next:before {
+    background: url(/images/arrow.png)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat;
+  }
+  
+  .slick-prev:before {
+    background: url(/images/arrow-prev.png)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat;
+  }
+
+  .img-slick{
+    height: 60vh!important;
+  }
+
+  .w-60{
+    width: 60%;
+  }
+
+  ::selection{
+    background:#3a3a3a;
+    color: #fff;
+  }
+
+@media (max-width: 1400px){
+    .main-title {
+        width: 100%!important;
+    }
+    li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    
+.frase h2{
+    font-size: 2rem;
+}
+
+.frase p{
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   font-size: 1.2rem;
+   font-weight: lighter;
+}
+
+
+.frase a {
+   text-decoration: none;
+   color: #000;
+   font-size: 1rem;
+   border: 1px solid #000;
+   padding: 1rem;
+}
+
+.title h2{
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.sobre-tijolo p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.sobre-tijolo{
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+.reconstruindo{
+    font-size: 2rem;
+}
+
+.contato h3{
+    color: #fff;
+    font-weight: normal;
+    margin: 1.5rem;
+    font-size: 1.3rem;
+}
 }

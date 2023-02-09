@@ -1,14 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>UmBloco</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
+
 <body>
 
-    
-    
+    <header class="header-off">
+        <div class="logo">
+            <a href="#">
+                <img src="images/umbloco_1_horizontal_transparente (1) 1.png" alt="Logo UmBLoco">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><span class="navanimation"><a href="#projetos">Projetos</a></span></li>
+                <li><span class="navanimation"><a href="#historia">Nossa História</a></span></li>
+                <li><span class="navanimation"><a href="#bloco">O Bloco</a></span></li>
+                <li><span class="navanimation"><a href="#contato">Contato</a></span>></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="w-80 main-content">
+
+            <div class="w-50">
+                <h1 class="main-title">Somos a <span>UmBloco</span></h1>
+                <p class="main-subtitle">Oferecemos soluções que atendem as demandas latentes da nova construção civil.
+                </p>
+            </div>
+
+
+            <div class="main-bloco w-50" data-relative-input="true" id="scene">
+                <img src="./images/bloco.png" alt="" data-depth="0.2">
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="projetos" id="projetos">
+
+        <div class="w-80 ">
+            <div class="title">
+                <h2 class="border-grossa">Projetos</h2>
+                <div class="border-title"><span></span></div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="w-60">
+                <div class="banner-slick d-flex">
+                    <div>
+                        <div class="d-flex img-slick">
+                            <img src="./images/banner-02.png" alt="" class="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex img-slick">
+                            <img src="./images/banner-02.png" alt="" class="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb" id="historia">
+        <div class="d-flex w-80 ">
+            <div class="w-50">
+                <img src="images/umbloco-img-01.png" alt="" class="vh80">
+            </div>
+            <div class="w-50 frase d-flex-end">
+                <h2><span class="font-light">“</span>UmBloco <span class="font-light">o encaixe perfeito para sua
+                        construção ”</span></h2>
+                <p>Nascemos de uma inquietação
+                    Mudanças climáticas, processos ineficientes, poluição generalizada, desigualdade
+                    <br><br>
+                    Para isso unimos o poder do design e da tecnologia para produzir novas soluções para a construção
+                    civil. Transformamos resíduos plásticos em matéria-prima de bens duráveis
+                    <br><br>
+                    Somos movidos por um propósito muito maior do que nós - e esse é só o começo!
+                </p>
+                <a href="#">Entre em Contato</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="bloco">
+        <div class="w-80 ">
+            <div class="title">
+                <h2 class="border-grossa tijolo">O Tijolo Sustentável</h2>
+                <div class="border-title"><span></span></div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="w-80 d-flex">
+                <div class="w-50 sobre-tijolo">
+                    <p><span class="reconstruindo">Reconstruindo a <span class="strong">forma de construir</span> </span>
+                        <br><br>
+                        Nossa primeira solução busca construir as bases para a nova geração da<span class="strong">
+                            construção civil.</span>
+                        <br><br>
+                        A partir de materiais descartados e residuais, desenvolvemos um tijolo sustentável feito por <span
+                            class="strong">100% de plástico</span> - um produto equivalente às soluções existentes, com
+                        <span class="strong">benefícios únicos.</span>
+                    </p>
+                </div>
+                <div class="w-50">
+                    <img src="images/tijolo-colors.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="contato">
+        <div class="d-flex">
+            <div class="w-80 d-flex">
+                <div class="w-50 contato">
+                    <h3>Entre em Contato:</h3>
+                    <a href="">
+                        <h3>lucas.lopes@umbloco.com</h3>
+                    </a>
+                    <h3>+55 (11) 95039 1609</h3>
+                </div>
+                <div class="w-50 contato">
+                    <a href=""><img src="images/logo-branco.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="/JS/script.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </body>
+
 </html>
