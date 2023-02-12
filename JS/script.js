@@ -40,3 +40,14 @@ $(document).ready(function () {
         speed: 300,
     });
 });
+
+let checkbox = document.getElementById('checkbox-menu')
+let menu = document.getElementById('nav-mob')
+
+function hamburguer() {
+  if (checkbox.checked) {
+    menu.classList.remove('display-none')
+  } else {
+    menu.classList.add('display-none')
+  }
+}

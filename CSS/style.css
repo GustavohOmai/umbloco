@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.mobile {
+    display: none;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -23,7 +27,7 @@ header {
     z-index: 2;
 }
 
-footer{
+footer {
     background-color: #171717;
     margin-top: 5rem;
 }
@@ -55,17 +59,17 @@ li a {
 }
 
 body::-webkit-scrollbar {
-    width: 7px;           
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #0d0d0d; 
-  }
-  
-  body::-webkit-scrollbar-thumb {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+body::-webkit-scrollbar-thumb {
     background: #444444;
-    border-radius: 30px;  
-  }
+    border-radius: 30px;
+}
 
 
 .navanimation {
@@ -93,11 +97,11 @@ body::-webkit-scrollbar {
 }
 
 .w-80 {
-    width: 80%!important;
+    width: 80% !important;
     margin: auto;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -140,12 +144,12 @@ img{
     width: 80%;
 }
 
-.title{
+.title {
     width: 100%;
     position: relative;
 }
 
-.title h2{
+.title h2 {
     font-size: 3rem;
     font-weight: normal;
 }
@@ -167,7 +171,7 @@ img{
     z-index: 1;
 }
 
-.border-grossa.tijolo{
+.border-grossa.tijolo {
     border-bottom: 4px solid #000;
     width: 20%;
     position: relative;
@@ -179,30 +183,31 @@ img{
     justify-content: center;
 }
 
-.projetos{
+.projetos {
     margin-bottom: 5rem;
 }
-.frase{
+
+.frase {
     padding: 2rem;
     text-align: end;
 }
 
-.frase h2{
-     font-size: 3.5rem;
+.frase h2 {
+    font-size: 3.5rem;
 }
 
-.frase p{
+.frase p {
     margin-top: 5rem;
     margin-bottom: 5rem;
     font-size: 1.5rem;
     font-weight: lighter;
 }
 
-.font-light{
+.font-light {
     font-weight: normal;
 }
 
-.d-flex-end{
+.d-flex-end {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -216,151 +221,352 @@ img{
     padding: 1rem;
 }
 
-.vh80{
+.vh80 {
     max-width: 70%;
 }
 
-.mb{
+.mb {
     margin-bottom: 5rem;
 }
 
-.sobre-tijolo p{
+.sobre-tijolo p {
     font-size: 1.5rem;
     line-height: 2;
 }
 
-.sobre-tijolo{
+.sobre-tijolo {
     display: flex;
     align-items: center;
     padding-right: 2rem;
 }
 
-.strong{
+.strong {
     font-weight: bold;
 }
 
-.reconstruindo{
+.reconstruindo {
     font-size: 2.3rem;
 }
 
-.contato h3{
+.contato h3 {
     color: #fff;
     font-weight: normal;
     margin: 2rem;
     font-size: 1.5rem;
 }
 
-.contato a{
+.contato a {
     color: #fff;
- 
+
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.w-50{
+.w-50 {
     width: 50%;
 }
 
 
-.slick-arrow:before{
-    content:""!important;
-      width: 50%!important;
-      height: 90%!important;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  
-  .slick-next:before {
-    background: url(/images/arrow.png)!important;
-    background-size: contain!important;
-    background-repeat: no-repeat;
-  }
-  
-  .slick-prev:before {
-    background: url(/images/arrow-prev.png)!important;
-    background-size: contain!important;
-    background-repeat: no-repeat;
-  }
+.slick-arrow:before {
+    content: "" !important;
+    width: 50% !important;
+    height: 90% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-  .img-slick{
-    height: 60vh!important;
-  }
+.slick-next:before {
+    background: url(/images/arrow.png) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
 
-  .w-60{
+.slick-prev:before {
+    background: url(/images/arrow-prev.png) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
+.img-slick {
+    height: 60vh ;
+}
+
+.w-60 {
     width: 60%;
-  }
+}
 
-  ::selection{
-    background:#3a3a3a;
+::selection {
+    background: #3a3a3a;
     color: #fff;
-  }
+}
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
     .main-title {
-        width: 100%!important;
+        width: 100% !important;
     }
+
     li a {
         text-decoration: none;
         color: #fff;
         font-size: 1.3rem;
     }
 
-    
-.frase h2{
-    font-size: 2rem;
+
+    .frase h2 {
+        font-size: 2rem;
+    }
+
+    .frase p {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+
+    .frase a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        border: 1px solid #000;
+        padding: 1rem;
+        transition: ease-in .3s;
+    }
+
+    .frase a:hover {
+        color: #fff;
+        background-color: #000;
+        box-shadow: #000 0px 0px 1.5rem;
+    }
+
+    .title h2 {
+        font-size: 2.2rem;
+        font-weight: normal;
+    }
+
+    .sobre-tijolo p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+
+    .sobre-tijolo {
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    .reconstruindo {
+        font-size: 2rem;
+    }
+
+    .contato h3 {
+        color: #fff;
+        font-weight: normal;
+        margin: 1.5rem;
+        font-size: 1.3rem;
+    }
 }
 
-.frase p{
-   margin-top: 3rem;
-   margin-bottom: 3rem;
-   font-size: 1.2rem;
-   font-weight: lighter;
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
 }
 
-
-.frase a {
-   text-decoration: none;
-   color: #000;
-   font-size: 1rem;
-   border: 1px solid #000;
-   padding: 1rem;
-   transition: ease-in .3s;
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
 }
 
-.frase a:hover {
-    color: #fff;
-    background-color: #000;
-    box-shadow: #000 0px 0px 1.5rem;
- }
-
-.title h2{
-    font-size: 2.2rem;
-    font-weight: normal;
+label span {
+    position: absolute;
+    display: block;
+    height: .1rem;
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
 }
 
-.sobre-tijolo p{
-    font-size: 1.2rem;
-    line-height: 1.8;
+label span:nth-child(1) {
+    top: 0;
 }
 
-.sobre-tijolo{
-    display: flex;
-    align-items: center;
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.menu {
     padding-right: 2rem;
-}
-.reconstruindo{
-    font-size: 2rem;
+    padding-top: 1rem;
 }
 
-.contato h3{
-    color: #fff;
-    font-weight: normal;
-    margin: 1.5rem;
-    font-size: 1.3rem;
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
 }
+
+.display-none {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .nav-lg {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    ul,
+    li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        position: fixed;
+        right: 0px;
+        display: flex;
+        padding: 1rem;
+        background: #e6e6e6;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    li{
+        margin-top: 1rem;
+    }
+
+    li a{
+        color: #000;
+    }
+
+    .main-container {
+        background-image: none;
+    }
+
+    header{
+        background: #171717;
+    }
+
+    .main-title{
+        font-size: 4rem;
+    }
+
+    .main-content .w-50{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-bloco img{
+        width: 100%;
+    }
+
+    .main-subtitle{
+        width: 100%;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .img-slick{
+        height: 30vh;
+    }
+    
+    .w-60{
+        width: 80%;
+    }
+    .w-50{
+        width: 100%;
+    }
+
+    .mb .d-flex{
+        flex-direction: column-reverse;
+    }
+
+    .mb .d-flex .w-50 img{
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .frase{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .border-grossa {
+        width: 35%;
+    }
+
+    .border-grossa.tijolo {
+        width: 50%;
+    }
+
+    #bloco .d-flex{
+        flex-direction: column;
+    }
+
+    .sobre-tijolo p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+    .reconstruindo{
+        font-size: 1.5rem;
+    }
+
+    .contato h3 {
+        font-size: 1rem;
+    }
+    #contato .d-flex .w-80{
+        width: 90%!important;
+    }
+
+    
 }

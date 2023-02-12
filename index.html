@@ -23,12 +23,12 @@
 <body>
 
     <header class="header-off">
-        <div class="logo">
+        <div class="logo nav-lg">
             <a href="#">
                 <img src="images/umbloco_1_horizontal_transparente (1) 1.png" alt="Logo UmBLoco" id="image-header" class="image-header">
             </a>
         </div>
-        <nav>
+        <nav class="nav-lg">
             <ul>
                 <li><span class="navanimation"><a href="#projetos">Projetos</a></span></li>
                 <li><span class="navanimation"><a href="#historia">Nossa História</a></span></li>
@@ -36,7 +36,37 @@
                 <li><span class="navanimation"><a href="#contato">Contato</a></span>></li>
             </ul>
         </nav>
+
+        <div class="logo mobile">
+            <a href="#">
+                <img src="images/logo-branco.png" alt="Logo UmBLoco" id="image-header" class="image-header">
+            </a>
+        </div>
+
+        <div class="menu">
+            <div class="container nav-mob">
+                <input type="checkbox" id="checkbox-menu" onclick="hamburguer()">
+
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <nav id="nav-mob" class="display-none">
+                <ul>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#historia">Nossa História</a></li>
+                    <li><a href="#bloco">O Bloco</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
+
+
 
     <main class="main-container">
         
@@ -79,7 +109,6 @@
                             <img src="./images/banner-02.png" alt="" class="">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
