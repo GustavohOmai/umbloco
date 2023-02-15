@@ -568,5 +568,12 @@ label span:nth-child(3) {
         width: 90%!important;
     }
 
+    #contato .d-flex .w-50{
+        width: 50%!important;
+    }
+    .contato img{
+        margin-top: 1rem;
+    }
+
     
 }
