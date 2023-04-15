@@ -427,7 +427,7 @@ label span:nth-child(3) {
     padding-top: 1rem;
 }
 
-@media (min-width: 9000px) {
+@media (min-width: 900px) {
     .menu {
         display: none;
     }
