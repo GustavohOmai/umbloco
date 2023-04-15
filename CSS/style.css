@@ -590,8 +590,4 @@ label span:nth-child(3) {
     .main-bloco img{
         width: 100%;
     }
-
-    .main-container{
-        margin-bottom: -10rem;
-    }
 }
