@@ -1,11 +1,7 @@
 const nav = document.querySelector("header");
-const scene = document.getElementById('scene');
 const imageHeader = document.querySelector("#image-header");
 
 
-scene.addEventListener("mouseover", () => {
-    const parallaxInstance = new Parallax(scene);
-})
 
 
 
@@ -39,6 +35,12 @@ $(document).ready(function () {
         slidesToScroll: 1,
         speed: 300,
     });
+
+
+    var scene = document.getElementById('scene');
+const parallaxInstance = new Parallax(scene);
+parallaxInstance.invert(false, false)
+parallaxInstance.scalar(6, 6)
 });
 
 let checkbox = document.getElementById('checkbox-menu')
